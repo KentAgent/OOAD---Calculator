@@ -13,7 +13,7 @@ namespace OOADLabb1Calculator
 
         public void press() 
         {
-            theCommand.execute();
+            theCommand.Execute();
         }
     }
 }

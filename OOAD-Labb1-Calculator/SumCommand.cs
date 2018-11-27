@@ -11,9 +11,10 @@ namespace OOADLabb1Calculator
             theCalc = newCalc;
         }
 
-        public void execute()
+        public void Execute()
         {
             theCalc.Sum(1, 2);
         }
+        
     }
 }

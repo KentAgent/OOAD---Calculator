@@ -11,7 +11,7 @@ namespace OOADLabb1Calculator
             theDevice = newDevice;
         }
 
-        public void execute()
+        public void Execute()
         {
             theDevice.On();
         }

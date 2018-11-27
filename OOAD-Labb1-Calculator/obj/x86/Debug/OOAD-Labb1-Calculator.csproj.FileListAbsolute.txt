@@ -4,3 +4,9 @@
 /Users/Apostolidis/Projects/OOAD-Labb1-Calculator/OOAD-Labb1-Calculator/obj/x86/Debug/OOAD-Labb1-Calculator.csproj.CoreCompileInputs.cache
 /Users/Apostolidis/Projects/OOAD-Labb1-Calculator/OOAD-Labb1-Calculator/obj/x86/Debug/OOAD-Labb1-Calculator.exe
 /Users/Apostolidis/Projects/OOAD-Labb1-Calculator/OOAD-Labb1-Calculator/obj/x86/Debug/OOAD-Labb1-Calculator.pdb
+C:\Users\willi\Documents\schuuul\OOAD\OOAD---Calculator\OOAD-Labb1-Calculator\obj\x86\Debug\OOAD-Labb1-Calculator.csprojAssemblyReference.cache
+C:\Users\willi\Documents\schuuul\OOAD\OOAD---Calculator\OOAD-Labb1-Calculator\obj\x86\Debug\OOAD-Labb1-Calculator.csproj.CoreCompileInputs.cache
+C:\Users\willi\Documents\schuuul\OOAD\OOAD---Calculator\OOAD-Labb1-Calculator\obj\x86\Debug\OOAD-Labb1-Calculator.exe
+C:\Users\willi\Documents\schuuul\OOAD\OOAD---Calculator\OOAD-Labb1-Calculator\obj\x86\Debug\OOAD-Labb1-Calculator.pdb
+C:\Users\willi\Documents\schuuul\OOAD\OOAD---Calculator\OOAD-Labb1-Calculator\bin\Debug\OOAD-Labb1-Calculator.exe
+C:\Users\willi\Documents\schuuul\OOAD\OOAD---Calculator\OOAD-Labb1-Calculator\bin\Debug\OOAD-Labb1-Calculator.pdb
