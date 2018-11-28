@@ -3,8 +3,8 @@ namespace OOADLabb1Calculator
 {
     public interface ICalculator
     {
-
-        double Sum(double a, double b);
+        bool Insert(double a);
+        double Add(double a, double b);
 
         double Subtract(double a, double b);
 

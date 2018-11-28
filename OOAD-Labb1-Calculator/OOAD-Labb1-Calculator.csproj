@@ -33,20 +33,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Commands\AddDoubleCommand.cs" />
+    <Compile Include="Commands\InputCommand.cs" />
+    <Compile Include="Interfaces\IInputCommand.cs" />
     <Compile Include="Interfaces\IUndoRedo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Interfaces\ICalculator.cs" />
-    <Compile Include="Calculator.cs" />
-    <Compile Include="Commands\Command.cs" />
-    <Compile Include="StackHandler.cs" />
+    <Compile Include="Devices\Calculator.cs" />
+    <Compile Include="Interfaces\ICommand.cs" />
+    <Compile Include="Devices\SupportComponents\StackHandler.cs" />
     <Compile Include="Commands\SubDoubleCommand.cs" />
-    <Compile Include="SumCommand.cs" />
+    <Compile Include="Commands\SumCommand.cs" />
     <Compile Include="Commands\OnCommand.cs" />
     <Compile Include="Commands\OffCommand.cs" />
-    <Compile Include="DeviceButton.cs" />
-    <Compile Include="CalculatorDevice.cs" />
-    <Compile Include="ElectronicDevice.cs" />
+    <Compile Include="Devices\SupportComponents\DeviceButton.cs" />
+    <Compile Include="Devices\SupportComponents\CalculatorDevice.cs" />
+    <Compile Include="Interfaces\IElectronicDevice.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

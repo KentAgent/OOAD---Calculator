@@ -13,7 +13,7 @@ namespace OOADLabb1Calculator
 
         public void Execute()
         {
-            theCalc.Sum(1, 2);
+            theCalc.Add(1, 2);
         }
         
     }

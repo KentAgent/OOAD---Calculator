@@ -11,7 +11,7 @@ namespace OOADLabb1Calculator
             theCommand = newCommand;
         }
 
-        public void press() 
+        public void Press() 
         {
             theCommand.Execute();
         }

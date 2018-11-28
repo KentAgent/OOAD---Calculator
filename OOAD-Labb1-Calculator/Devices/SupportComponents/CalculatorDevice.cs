@@ -7,5 +7,6 @@ namespace OOADLabb1Calculator
         {
             return new Calculator();
         }
+        public static ICalculator Calculator => new Calculator();
     }
 }
