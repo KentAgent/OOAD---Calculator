@@ -4,9 +4,9 @@ namespace OOADLabb1Calculator
     public class DeviceButton
     {
 
-        Command theCommand;
+        ICommand theCommand;
 
-        public DeviceButton(Command newCommand)
+        public DeviceButton(ICommand newCommand)
         {
             theCommand = newCommand;
         }

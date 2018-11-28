@@ -1,7 +1,7 @@
 ﻿using System;
 namespace OOADLabb1Calculator
 {
-    public class SumCommand : Command
+    public class SumCommand : ICommand
     {
 
         Calculator theCalc;

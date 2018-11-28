@@ -3,7 +3,7 @@ namespace OOADLabb1Calculator
 {
     public class CalculatorDevice
     {
-        public static ElectronicDevice GetDevice() 
+        public static IElectronicDevice GetDevice() 
         {
             return new Calculator();
         }

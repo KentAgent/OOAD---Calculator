@@ -1,7 +1,7 @@
 ﻿using System;
 namespace OOADLabb1Calculator
 {
-    public interface Command
+    public interface ICommand
     {
 
         void Execute();

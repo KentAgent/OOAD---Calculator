@@ -32,17 +32,18 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddDoubleCommand.cs" />
-    <Compile Include="IUndoRedo.cs" />
+    <Compile Include="Commands\AddDoubleCommand.cs" />
+    <Compile Include="Interfaces\IUndoRedo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ICalculator.cs" />
+    <Compile Include="Interfaces\ICalculator.cs" />
     <Compile Include="Calculator.cs" />
-    <Compile Include="Command.cs" />
+    <Compile Include="Commands\Command.cs" />
     <Compile Include="StackHandler.cs" />
+    <Compile Include="Commands\SubDoubleCommand.cs" />
     <Compile Include="SumCommand.cs" />
-    <Compile Include="OnCommand.cs" />
-    <Compile Include="OffCommand.cs" />
+    <Compile Include="Commands\OnCommand.cs" />
+    <Compile Include="Commands\OffCommand.cs" />
     <Compile Include="DeviceButton.cs" />
     <Compile Include="CalculatorDevice.cs" />
     <Compile Include="ElectronicDevice.cs" />

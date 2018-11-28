@@ -1,7 +1,7 @@
 ﻿using System;
 namespace OOADLabb1Calculator
 {
-    public interface ElectronicDevice
+    public interface IElectronicDevice
     {
         void On();
 

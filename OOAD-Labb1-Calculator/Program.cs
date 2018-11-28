@@ -39,7 +39,7 @@ namespace OOADLabb1Calculator
 
             Console.WriteLine(count);
             Console.ReadLine();
-
+            
         }
     }
 }

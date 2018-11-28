@@ -1,7 +1,7 @@
 ﻿using System;
 namespace OOADLabb1Calculator
 {
-    public class Calculator : ICalculator, ElectronicDevice
+    public class Calculator : ICalculator, IElectronicDevice
     {
 
         public double Divide(double a, double b)

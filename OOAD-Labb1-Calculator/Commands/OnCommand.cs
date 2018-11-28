@@ -1,12 +1,12 @@
 ﻿using System;
 namespace OOADLabb1Calculator
 {
-    public class OnCommand : Command
+    public class OnCommand : ICommand
     {
 
-        ElectronicDevice theDevice;
+        IElectronicDevice theDevice;
 
-        public OnCommand(ElectronicDevice newDevice)
+        public OnCommand(IElectronicDevice newDevice)
         {
             theDevice = newDevice;
         }
