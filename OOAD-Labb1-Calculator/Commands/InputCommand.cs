@@ -15,21 +15,6 @@ namespace OOADLabb1Calculator
         }
         public void Execute()
         {
-            //Tvek
-            Console.WriteLine("Type a : ");
-            string a = Console.ReadLine();
-            string b = Console.ReadLine();
-
-            try
-            {
-                double a2 = Convert.ToDouble(a);
-                double b2 = Convert.ToDouble(b);
-                calc.Add(a2, b2);
-            }
-            catch (Exception e)
-            {
-
-            }
         }
     }
 }

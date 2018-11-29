@@ -5,6 +5,7 @@ namespace OOADLabb1Calculator
     {
         StackHandler<double> stackHandler = new StackHandler<double>();
         double count = 0;
+        private bool PowerOn = false;
 
         public bool Insert(double a)
         {
@@ -34,6 +35,47 @@ namespace OOADLabb1Calculator
         public void On()
         {
             Console.WriteLine("You turned the calculator on");
+            PowerOn = true;
+            Running();
+        }
+        private void Running()
+        {
+            while (PowerOn)
+            {
+                ICalculator calc = CalculatorDevice.Calculator;
+                InputCommand<double> inputCommand = new InputCommand<double>(calc);
+                DeviceButton onClick = new DeviceButton(inputCommand);
+
+                Console.WriteLine("Enter number: ");
+                double input1 = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine("Chose an operator. ( +  -  /  *  = ) or undo by entering UNDO");
+                string op = Console.ReadLine();
+                switch (op)
+                {
+                    case "+":
+                        AddDoubleCommand command = new AddDoubleCommand(input1);
+                        count = stackHandler.Do(command, count);
+                        break;
+                    case "-":
+                        break;
+                    case "/":
+                        break;
+                    case "=":
+                        break;
+                    case "UNDO":
+                        break;
+                    default:
+                        Console.WriteLine("Dont be a retard. Select a valid operator");
+                        break;
+                }
+                Console.WriteLine(" Count: " + count);
+            }
+            
+
+
+            Console.WriteLine("Do u want to undo this?");
+
         }
 
         public double Subtract(double a, double b)

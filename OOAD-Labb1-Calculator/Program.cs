@@ -6,20 +6,17 @@ namespace OOADLabb1Calculator
     {
         public static void Main(string[] args)
         {
-            /*
+            
             IElectronicDevice newDevice = CalculatorDevice.GetDevice();
             OnCommand onCommand = new OnCommand(newDevice);
             DeviceButton onPressed = new DeviceButton(onCommand);
-            onPressed.Press();
-            */
-
-            ICalculator calc = CalculatorDevice.Calculator;
-            InputCommand<double> inputCommand = new InputCommand<double>(calc);
-            DeviceButton onClick = new DeviceButton(inputCommand);
-         
-            onClick.Press();
-
-
+            Console.WriteLine("Do u want to start the calculator? yes/no");
+            string answer = Console.ReadLine();
+            if (answer.ToUpper() == "YES")
+            {
+                onPressed.Press();
+            }
+            
             /*
 
             // Turn Device On
