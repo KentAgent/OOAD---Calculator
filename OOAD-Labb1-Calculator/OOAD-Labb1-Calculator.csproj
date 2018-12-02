@@ -34,6 +34,7 @@
   <ItemGroup>
     <Compile Include="Commands\AddDoubleCommand.cs" />
     <Compile Include="Commands\InputCommand.cs" />
+    <Compile Include="Devices\SupportComponents\SelectMethods.cs" />
     <Compile Include="Interfaces\IInputCommand.cs" />
     <Compile Include="Interfaces\IUndoRedo.cs" />
     <Compile Include="Program.cs" />

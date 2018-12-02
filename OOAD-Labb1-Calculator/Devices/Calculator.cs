@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OOADLabb1Calculator.Devices.SupportComponents;
+using System;
 namespace OOADLabb1Calculator
 {
     public class Calculator : ICalculator, IElectronicDevice
@@ -40,42 +41,60 @@ namespace OOADLabb1Calculator
         }
         private void Running()
         {
+            double input2 = 0;
+            string initOperation = "+";
+
+            Console.WriteLine("Enter number: ");
+            double input1 = Convert.ToDouble(Console.ReadLine());
+            PerformOperation(input1, initOperation);
+
             while (PowerOn)
             {
-                ICalculator calc = CalculatorDevice.Calculator;
+                /*  Might use this in a future implementation
+                 * ICalculator calc = CalculatorDevice.Calculator;
                 InputCommand<double> inputCommand = new InputCommand<double>(calc);
-                DeviceButton onClick = new DeviceButton(inputCommand);
+                DeviceButton onClick = new DeviceButton(inputCommand); 
+                */
 
-                Console.WriteLine("Enter number: ");
-                double input1 = Convert.ToDouble(Console.ReadLine());
-
-                Console.WriteLine("Chose an operator. ( +  -  /  *  = ) or undo by entering UNDO");
-                string op = Console.ReadLine();
-                switch (op)
+                string op = SelectMethods.SelectOperation();
+                if (op == "UNDO" || op == "REDO")
                 {
-                    case "+":
-                        AddDoubleCommand command = new AddDoubleCommand(input1);
-                        count = stackHandler.Do(command, count);
-                        break;
-                    case "-":
-                        break;
-                    case "/":
-                        break;
-                    case "=":
-                        break;
-                    case "UNDO":
-                        break;
-                    default:
-                        Console.WriteLine("Dont be a retard. Select a valid operator");
-                        break;
+                    input2 = count;
+                } else 
+                {
+                    Console.WriteLine("Enter number: ");
+                    input2 = Convert.ToDouble(Console.ReadLine());
                 }
-                Console.WriteLine(" Count: " + count);
+                    PerformOperation(input2, op);
+                    Console.WriteLine(" Count: " + count);
             }
-            
+        }
 
-
-            Console.WriteLine("Do u want to undo this?");
-
+        private void PerformOperation(double input, string op)
+        {
+            switch (op)
+            {
+                case "+":
+                    AddDoubleCommand command = new AddDoubleCommand(input);
+                    count = stackHandler.Do(command, count);
+                    break;
+                case "-":
+                    break;
+                case "/":
+                    break;
+                case "=":
+                    break;
+                case "UNDO":
+                    count = stackHandler.Undo(count);
+                    Console.WriteLine("You undid");
+                    break;
+                case "REDO":
+                    count = stackHandler.Redo(count);
+                    Console.WriteLine("You redid");
+                    break;
+                default:
+                    break;
+            }
         }
 
         public double Subtract(double a, double b)
